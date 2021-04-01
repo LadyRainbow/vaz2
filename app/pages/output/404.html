@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Жигули2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../../build/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <a class="logo-img" href="/">
+        <img src="../../build/img/logo.svg" alt="">
+    </a>
+    <div class="burger">
+        <span></span>
+    </div>
+    <div class="header-acc-wrp">
+
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <ul class="menu-list">
+        <li class="active">
+            <a href="#about" class="scrollTo">о фестивале</a>
+        </li>
+        <li>
+            <a href="#gallery" class="scrollTo">фото</a>
+        </li>
+        <li>
+            <a href="#contacts" class="scrollTo">контакты</a>
+        </li>
+        <li>
+            <a href="#" class="open-pop-up-menu">купить билет</a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="pages-wrapper">
+            <section class="not-found pt64">
+    <div class="container">
+        <div class="row">
+            <div class="offset-xl-3 offset-lg-2 offset-md-1 offset-0 col-xl-6 col-lg-8 col-md-10 col-12">
+                <p class="cifra">404</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" offset-lg-2 offset-md-1 offset-0 col-lg-8 col-md-10 col-12">
+                <h3>Запрашиваемая вами страница не&nbsp;найдена или перенесена.</h3>
+                <p>Попробуйте воспользоваться меню
+                или <a href="/">перейти на главную</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-block">
+                <p>Телефон</p>
+                <a href="tel:499 755 54 02">499 755 54 02</a>
+            </div>
+            <a href="/" class="footer-logo">
+                <img src="../../build/img/logo.svg" alt="">
+            </a>
+            <div class="footer-top-block">
+                <p>E-mail</p>
+                <a href="mailto:info@driftexpo.ru">info@driftexpo.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2021 Все права защищены</p>
+            <a href="https://daykraba.com/" class="footer-krab" target="_blank">
+                <img src="../../build/img/krab.png" alt="">
+            </a>
+            <p>
+                <a href="/policy">Правовая информация</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="buyTicket" class="pop-up-general-block">
+    <p class="form-title">купить билет</p>
+    <form>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <div class="radio-wrp">
+                    <label class="radio">
+                        <input type="radio" name="tick" checked/>
+                        <div class="radio-text">Билет участника</div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">10 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price"><span class="ticketPrice">900</span> ₽</p>
+                    </div>
+                </div>
+                <div class="row row-rest">
+                    <div class="col-4">
+                        <p>остальные</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">80 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">1 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <div class="radio-wrp">
+                    <label class="radio">
+                        <input type="radio" name="tick"/>
+                        <div class="radio-text">Билет зрителя</div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">8 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price"><span  class="ticketPrice">700</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <label class="checkbox-long">
+                    <input class="checkbox-amount" type="checkbox" />
+                    <div class="checkbox-text-long">
+                        <p>Парковочное место зрителя</p>
+                        <p>Для зрителей, приехавших на личном авто</p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">2 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">+<span class="place-amount">200</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line row-line-btn">
+            <div class="col-lg-6 col-12">
+                <p class="prop-price">Итого:</p>
+                <p class="val-price"><span>700</span> рублей</p>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="form-btn-wrp">
+                    <div class="form-btn-skew skew-btn">
+                        <input class="form-btn" type="submit" name="" value="Купить билет">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="accredBlock" class="pop-up-general-block">
+    <p class="form-title">аккредитация сми</p>
+    <form id="accredForm" >
+        <div class="row">
+            <div class="col-12">
+                <p class="input-title">ФИО</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" data-input="name" name="name">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <p class="input-title">Представителем какого СМИ вы являетесь</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="smi">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 label-form-wrp label-form-mob">
+                <label class="checkbox">
+                    <input type="checkbox" />
+                    <div class="checkbox-text">
+                        <p>Есть удостоверение журналиста</p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-12">
+                <p class="input-title">На каких ресурсах будет размещен материал с мероприятия</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="source">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <p class="input-title">Сколько человек в Вашей бригаде (операторы  и т.д.)</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="men">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12">
+                <p class="input-title">Контактный номер телефона</p>
+                <div class="input-style">
+                    <input class="input-form input-valid mask-phone" type="tel" data-input="phone" name="phone">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12 label-form-wrp">
+                <label class="checkbox">
+                    <input class="checkbox-check" type="checkbox" />
+                    <div class="checkbox-text">
+                        <p class="accred">Я согласен с <a href="/policy">политиками конфиденциальности</a></p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div class="form-btn-wrp">
+                    <div class="form-btn-skew skew-btn btn-checkbox btn-checkbox-disabled">
+                        <input class="form-btn" type="submit" name="" value="Отправить">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnx" class="pop-up-general-block thnx">
+    <p class="form-title">Ваша Заявка получена!</p>
+    <div>Спасибо за обращение! Наш менеджер перезвонит Вам в&nbsp;течение дня!</div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3607fc15-d35a-4f29-b7a9-b8cb92c549de" type="text/javascript"></script>
+
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/customSelect.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <script type="text/javascript">
+        function validation (a) {
+            var form = $(a);
+            var url = form.attr('action');
+            var method = form.attr('method');
+            var error = 0;
+
+            $(form).find('.input-valid').each(function() {
+                    var str = $(this).val();
+                    var value = $.trim(str);
+
+                    if($(this).hasClass('optional')) {
+                        return true;
+                    } else {
+                        if(!value || value == 'none'){
+                            $(this).closest('.input-style').addClass('error');
+                            $(this).closest('.input-style').find('.input-error').html('заполните поле');
+                            error = 1;
+                        }
+                        else {
+                            var str_length = value.length;
+                            if($(this).attr('data-input') == 'name'){
+                                if(str_length < 2 || str_length > 36){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^[а-яА-ЯёЁa-zA-Z\s]*$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только буквы');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'email'){
+                                if(str_length < 3 || str_length > 64){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат email');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'age'){
+                                if(str_length < 1 || str_length > 3){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = /^[0-9]*$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        var age = Number(value);
+                                        if(age < 16 || age > 125){
+                                            error = 1;
+                                            $(this).closest('.input-style').addClass('error');
+                                        }
+                                        else{
+                                            $(this).closest('.input-style').removeClass('error');
+                                        }
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'count'){
+                                if(str_length < 1 || str_length > 100){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('проверьте количество цифр');
+                                }
+                                else {
+                                    var regex = /^(?!0.*$)([0-9]{1,12})$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'phone'){
+                                if(str_length < 6 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,15}(\s*)?$/);
+                                    if (regex.test(value) == false) {
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                        error = 1;
+                                    }
+                                    else {
+                                      $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'social_link'){
+                                if(str_length < 10 || str_length > 80){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'birthday'){
+                                if(str_length !== 10){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'password'){
+                                if(str_length < 8 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('пароль должен содержить от 8 до 20 символов');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=(.*[a-zA-Z]){4}).{8,20}$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('пароль должен содержать латинские буквы и/или цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                        }
+                    }
+               });
+            if(error) {
+                return 1
+            } else {
+                return 0;
+              };
+        };
+    </script>
+</body>
+</html>

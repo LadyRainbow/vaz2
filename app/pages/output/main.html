@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Жигули2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../../build/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <a class="logo-img" href="/">
+        <img src="../../build/img/logo.svg" alt="">
+    </a>
+    <div class="burger">
+        <span></span>
+    </div>
+    <div class="header-acc-wrp">
+
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <ul class="menu-list">
+        <li class="active">
+            <a href="#about" class="scrollTo">о фестивале</a>
+        </li>
+        <li>
+            <a href="#gallery" class="scrollTo">фото</a>
+        </li>
+        <li>
+            <a href="#contacts" class="scrollTo">контакты</a>
+        </li>
+        <li>
+            <a href="#" class="open-pop-up-menu">купить билет</a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+        <div class="pages-wrapper">
+            <main>
+    <section class="section-main">
+
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 offset-0 col-xl-10 col-12">
+                    <div class="section-main-content">
+                        <div class="main-top-content">
+                            <p class="subtitle-main">12-13 июня 2021, Москва</p>
+                            <p>Фестиваль автотранспорта под открытым небом</p>
+                            <p class="bukva-big">future horizon</p>
+                        </div>
+                        <p>Приходите всей семьей и получите незабываемые впечатления на весь год!</p>
+                        <div class="main-btn-wrp">
+                            <div class="main-btn"><span>забронировать билеты</span></div>
+                        </div>
+                    </div>
+                    <a href="#programmSection" class="anchor-down scrollTo">
+                        <span>программа</span>
+                        <span class="scroll-line-wrp">
+                            <span class="run-line"></span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="programmSection" class="section-programm">
+        <div class="container">
+            <h2>Что вас ждет на фестивале</h2>
+            <div class="row">
+                <div class="offset-xl-1 col-xl-10 offset-0 col-12">
+                    <div class="vrezka">
+                        <p>Выставка редких автомобилей, которые вы раньше видели только на фото!</p>
+                        <p>От истоков машиностроения до футуристических прототипов</p>
+                    </div>
+                </div>
+            </div>
+            <div class="programm-points-section">
+                <div class="programm-points-img">
+                    <img data-car="car1" class="active" src="../../build/img/accord.png" alt="">
+                    <img data-car="car2" src="../../build/img/car1.jpg" alt="">
+                    <img data-car="car3" src="../../build/img/main.png" alt="">
+                    <img data-car="car4" src="../../build/img/accord.png" alt="">
+                    <img data-car="car5" src="../../build/img/accord.png" alt="">
+                    <img data-car="car6" src="../../build/img/accord.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <div class="accordion-wrp">
+                            <div id="accordion">
+                              <div class="card" data-car="car1">
+                                <div class="card-header" id="heading1">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                     <span> 01.</span> Легендарная ретротехника
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>Откройте "капсулу времени", соприкоснитесь с историей, прочувствуйте эпохи 40-х, 50-х, 60-х годов!</p>
+                                    <p>Более 10 ретро-авто из Америки, Европы и СССР в первозданном виде, с подробными описаниями и техническими характеристиками.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card" data-car="car2">
+                                <div class="card-header" id="heading2">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                      <span>02.</span> Уникальные суперкары
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>Смотрите и фотографируйтесь с более чем 20 моделями редких суперкаров, которые не встретишь на улице: Hispano Suiza, Bugatti Veyron, Ferrari, Porsche, Rolls-Royce и др.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card" data-car="car3">
+                                <div class="card-header" id="heading3">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                      <span>03.</span> Легенды 80-х и 90-х
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>BMW M5 E-34, BMW M3 E30, Mercedes E500 W124 и другие легендарные авто из "лихих девяностых".</p>
+                                    <p>Их уже почти нет на дорогах, но о них до сих пор вспоминают, как об эталоне машиностроения. Покажите своим детям вживую, о чем мечтали в своей юности!</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card" data-car="car4">
+                                <div class="card-header" id="heading4">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                      <span>04.</span> Гоночные машины
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>Более 20 машин, специально созданных для соревнований: от картинга и кольцевых гонок до ралли-рейдов.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card" data-car="car5">
+                                <div class="card-header" id="heading5">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                      <span>05.</span> Специализированная техника
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>Более 10 машин специального назначения, которые используют военные и спецслужбы.</p>
+                                    <p>Воплощение брутального дизайна и бескомпромисной функциональности.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="card" data-car="car6">
+                                <div class="card-header" id="heading6">
+                                  <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                      <span>06.</span> Техника будущего
+                                    </button>
+                                  </h5>
+                                </div>
+                                <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
+                                  <div class="card-body">
+                                    <p>Познакомьтесь с передовыми технологиями и новинками транспорта!</p>
+                                    <p>Узнайте, как развиваются альтернативы двигателю внутреннего сгорания, какие бывают машины с электрическими, газовыми и водородными двигателями.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="main-btn"><span>забронировать билеты</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-masonry">
+        <div class="container">
+            <div class="row-masonry">
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-enter">
+                            <p>Экшн-шоу</p>
+                            <p>&</p>
+                            <p>развлечения</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry1.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">Мотор-Шоу</p>
+                                    <div class="block-masonry-text">
+                                        <p>Захватывающий Stunt-riding, невероятные трюки, рев моторов, запах горелой резины и шквал адреналина - все как вы любите!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry2.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">Чемпионат по Sim Racing</p>
+                                    <div class="block-masonry-text">
+                                        <p>Хотите показать свои навыки гонщика? Участвуйте в чемпионате по Sim Racing, побеждайте и получайте призы!</p>
+                                        <p>Участвовать может любой гонщик в возрасте от 13 лет. Время заезда записывается в таблицу и по итогам 2 дней определяется тройка победителей, которые получат призы от наших спонсоров!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry3.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">VR-приключения</p>
+                                    <div class="block-masonry-text">
+                                        <p>Погрузитесь в мир виртуальной реальности - играйте, путешествуйте, исследуйте и находите приключения!</p>
+                                        <p>Любые программы на ваш вкус, сеансы по ХХ минут.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry4.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">Фуд-зона</p>
+                                    <div class="block-masonry-text">
+                                        <p>Как же без вкусной еды! Вас ждет фудкорт с разнообразной едой на вынос, где вы точно найдете что-то на ваш вкус!</p>
+                                        <p>Кроме классической уличной еды, будет и вегетарианская, и меню для любителей здоровой кухни!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry5.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">Торговые площадки</p>
+                                    <div class="block-masonry-text">
+                                        <p>Разнообразные сувениры, футболки и аксессуары - конечно же все на автомобильную тематику!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry6.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">Тематическая фотозона</p>
+                                    <div class="block-masonry-text">
+                                        <p>Делайте яркие фото с автомобилями и у тематических стендов - за 2 дня готовый запас аватарок на весь год!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <div class="block-masonry-content-img-wrp">
+                            <div class="block-masonry-content-img">
+                                <div class="block-masonry-img">
+                                    <img src="../../build/img/masonry7.png" alt="">
+                                </div>
+                                <div class="block-masonry-content">
+                                    <p class="block-masonry-title">А что для детей?</p>
+                                    <div class="block-masonry-text">
+                                        <p>А детей ждет целый надувной городок с множеством горок и лабиринтов!</p>
+                                        <p>И еще прокат ретро-машинок на педалях, какие были в СССР.</p>
+                                        <p>Вход для детей до 10 лет бесплатно в сопровождении взрослых.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block-masonry-wrp">
+                    <div class="block-masonry">
+                        <a href="https://youtu.be/3oem-M2tQU4" class="fancybox-vidos" data-fancybox>
+                            <div class="block-masonry-img">
+                                <img src="../../build/img/masonry8.png" alt="">
+                            </div>
+                            <span class="btn-play">
+
+                            </span>
+                            <p class="block-masonry-title">Смотрите, как здорово было на прошлых мероприятиях!</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-mas-wrp">
+                <div class="main-btn"><span>забронировать билеты</span></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-lecture">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <h2>Научно-популярные доклады и лекции</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-lg-1 col-lg-7 offset-0 col-12">
+                    <div class="vrezka">
+                        <p>Для тех, кто любит науку, будет ХХ открытых лекций. Лекции по 20-40 минут + ответы на вопросы. </p>
+                        <p>Раскроем такие темы:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-sections-wrp">
+                <div class="topic-section">
+                    <div class="topic-img">
+                        <img src="../../build/img/topic1.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="offset-lg-4 offset-0 col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">01</p>
+                                <div>
+                                    <p class="topic-title">Машины на&nbsp;альтернативном топливе</p>
+                                    <div class="topic-text">
+                                        <p>Почему вдруг все заговорили об экотопливе, почему это так актуально  именно сейчас, и какие перспективы в этой отрасли</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">02</p>
+                                <div>
+                                    <p class="topic-title">Электротранспорт - спасет экологию или принесет непоправимый урон?</p>
+                                    <div class="topic-text">
+                                        <p>Действительно ли переход на&nbsp;электротранспорт спасет от&nbsp;глобального потепления и&nbsp;загрязнения экосистемы Земли?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic-section">
+                    <div class="topic-img">
+                        <img src="../../build/img/topic2.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">03</p>
+                                <div>
+                                    <p class="topic-title">Recycling в&nbsp;производстве транспорта</p>
+                                    <div class="topic-text">
+                                        <p>Как перерабатываются отработанные запчасти и расходники, и как это используется в машиностроении</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">04</p>
+                                <div>
+                                    <p class="topic-title">IT-технологии в&nbsp;транспорте</p>
+                                    <div class="topic-text">
+                                        <p>Какие разработки из сферы IT внедряются в машиностроение, и&nbsp;как этим будем пользоваться мы&nbsp;с&nbsp;вами</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic-section">
+                    <div class="topic-img">
+                        <img src="../../build/img/topic3.png" alt="">
+                    </div>
+                    <div class="row">
+                        <div class="offset-lg-4 offset-0 col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">05</p>
+                                <div>
+                                    <p class="topic-title">Беспилотники в&nbsp;России</p>
+                                    <div class="topic-text">
+                                        <p>Как развиваются беспилотные технологии в России, что уже внедряется и как это повлияет на нашу жизнь в ближайшие 10 лет</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="topic-block">
+                                <p class="topic-cifra">06</p>
+                                <div>
+                                    <p class="topic-title">Электродвигатели в&nbsp;автомотоспорте</p>
+                                    <div class="topic-text">
+                                        <p>Как гоночные машины и мотоциклы постепенно переходят на электричество, и как это повлияет на привычные и любимые нами гонки</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topic-section">
+                <a href="https://youtu.be/3oem-M2tQU4" class="fancybox-vidos topic-fancybox-vidos" data-fancybox="">
+                    <div class="block-masonry-img">
+                        <img src="../../build/img/car1.jpg" alt="">
+                    </div>
+                    <span class="btn-play"></span>
+                    <p class="block-masonry-title">Еще видео с прошлых ивентов</p>
+                </a>
+            </div>
+            <div class="topic-main-btn main-btn"><span>забронировать билеты</span></div>
+        </div>
+    </section>
+    <section class="section-review">
+        <div class="container">
+            <h2>Почему наш фестиваль -<br>это лучший способ провести выходные?</h2>
+            <div class="row">
+                <div class="offset-xl-1 col-xl-10 offset-0 col-12">
+                    <div class="vrezka">
+                        <p>Потому что вы отлично проведете время всей семьей, получите незабываемые впечатления и яркие фотографии - будет что вспомнить холодными зимними вечерами :)</p>
+                    </div>
+                    <div class="review-slider-wrp">
+                        <div class="review-slider">
+                            <div>
+                                <div class="review-slide-wrp">
+                                    <div class="review-slide">
+                                        <div class="review-slider-text">
+                                            <p>Но выбранный нами инновационный путь способствует повышению качества существующих финансовых и административных условий. С учётом сложившейся международной обстановки, начало повседневной работы по формированию позиции не оставляет шанса для форм воздействия. А ещё некоторые особенности внутренней политики формируют глобальную экономическую сеть и при этом -.</p>
+                                        </div>
+                                        <div>
+                                            <p class="review-slider-name">Василий иванов</p>
+                                            <p class="review-slider-position">Зритель</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="review-slide-wrp">
+                                    <div class="review-slide">
+                                        <div class="review-slider-text">
+                                            <p>Но выбранный нами инновационный путь способствует повышению качества существующих финансовых и административных условий. С учётом сложившейся международной обстановки</p>
+                                        </div>
+                                        <div>
+                                            <p class="review-slider-name">Dodge</p>
+                                            <p class="review-slider-position">Участник</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="review-slide-wrp">
+                                    <div class="review-slide">
+                                        <div class="review-slider-text">
+                                            <p>Но выбранный нами инновационный путь способствует повышению качества существующих финансовых и административных условий. С учётом сложившейся международной обстановки, начало повседневной работы по формированию позиции не оставляет шанса для форм воздействия. А ещё некоторые особенности внутренней политики формируют глобальную экономическую сеть и при этом -.</p>
+                                        </div>
+                                        <div>
+                                            <p class="review-slider-name">Dodge</p>
+                                            <p class="review-slider-position">Участник</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider-arrows-wrp">
+                            <div class="main-slider-arrow prev-main-arrow">
+                                <img src="../../build/img/prev.svg" alt="">
+                            </div>
+                            <div class="main-slider-arrow next-main-arrow">
+                                <img src="../../build/img/next.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-map">
+        <div class="container">
+            <h2>Где и когда будет фестиваль</h2>
+            <div class="section-map-text">
+                <div class="block-where-flex-wrp">
+                    <div class="block-where-flex">
+                        <p class="where-title">где</p>
+                        <div class="where-text">
+                            <p>г. Москва, набережная большой спортивной арены олимпийского комплекса «Лужники»</p>
+                        </div>
+                    </div>
+                    <div class="block-where-flex">
+                        <p class="where-title">когда</p>
+                        <div class="where-text">
+                            <p>12 и 13 июня, <br> с 11:00 до 20:00</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="where-title">как добраться</p>
+                <div class="way-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-5 col-12">
+                            <p class="where-subtitle">ближайшие станции метро</p>
+                        </div>
+                        <div class="col-xl-9 col-lg-7 col-12">
+                            <ul class="way-list">
+                                <li>
+                                    <p><span>«Спортивная» (Сокольническая линия)</span></p>
+                                    <p>от станции примерно 15 минут пешком</p>
+                                </li>
+                                <li>
+                                    <p><span>«Воробьевы горы» (Сокольническая линия)</span></p>
+                                    <p>от станции 10 минут пешком. Выходить из метро в сторону Лужнецкой набережной (последний вагон из центра)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-5 col-12">
+                            <p class="where-subtitle">Московское центральное кольцо*</p>
+                        </div>
+                        <div class="col-xl-9 col-lg-7 col-12">
+                            <ul class="way-list">
+                                <li>
+                                    <p><span>Ближайшая к спортивному комплексу станция МЦК имеет одноименное название —  «Лужники»</span></p>
+                                    <p class="lighter">* МЦК  — маршрутная линия железнодорожного пассажирского транспорта, частично интегрированная с метрополитеном по системе оплаты проезда и пересадкам.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrp">
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+    <section class="section-price">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-12">
+                    <h2>Стоимость билетов</h2>
+                    <div class="price-list-wrp">
+                        <ul class="price-list">
+                            <li>
+                                Вход на мероприятие <br>для взрослых и детей от 10 лет
+                            </li>
+                            <li>
+                                Для детей до 10 лет в сопровождении взрослых вход бесплатный!
+                            </li>
+                            <li>
+                                Успейте забронировать <br>по минимальной цене!
+                            </li>
+                        </ul>
+                        <div class="main-btn"><span>забронировать билеты</span></div>
+                    </div>
+                </div>
+                <div class="offset-lg-0 col-lg-5 offset-md-4 col-md-8 col-12">
+                    <div class="block-price-actual gold">
+                        <p class="actual-value">до 01.05</p>
+                        <p class="actual-property">1 000 ₽</p>
+                    </div>
+                    <div class="block-price-actual">
+                        <p class="actual-value">с 01.05 до 01.06</p>
+                        <p class="actual-property">2 000 ₽</p>
+                    </div>
+                    <div class="block-price-actual bronze">
+                        <p class="actual-value">после 01.06</p>
+                        <p class="actual-property">3 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-guarantee">
+        <div class="container">
+            <div class="section-guarantee-content">
+                <div class="section-guarantee-img">
+                    <img src="../../build/img/guarantee-bg.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="offset-xl-5 offset-lg-4 offset-md-2 offset-0 col-xl-7 col-lg-8 col-md-10 col-12">
+                        <h2>Наша гарантия</h2>
+                        <div class="guarantee-text">
+                            <p>Мы знаем, о чем вы переживаете: эпидемиологическая ситуация в стране пока нестабильная и в любой момент могут запретить массовые мероприятия.</p>
+                            <p>К сожалению, мы от этого не застрахованы, но гарантируем, что если это все-таки произойдет, мы вернем вам полную стомость билетов без лишних разговоров.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-organization">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 xol-lg-5 col-md-6 col-12">
+                    <h2>Организатор фестиваля</h2>
+                    <p>Motorsport Network</p>
+                </div>
+                <div class="col-xl-8 xol-lg-7 col-md-6 col-12">
+                    <a href="#" class="block-org">
+                        <span class="org-bg">
+                            <img src="../../build/img/org-bg.png" alt="">
+                        </span>
+                        <img src="../../build/img/logo-org.svg" alt="" class="logo-org">
+                        <img src="../../build/img/link.svg" alt="" class="link-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-event">
+        <div class="container">
+            <h2>Проводим лучшие мероприятия на&nbsp;автомобильную тематику</h2>
+            <div class="event-blocks-wrp">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="event-block">
+                            <img src="../../build/img/event1.png" alt="">
+                            <div class="event-block-content">
+                                <p class="event-name">RTR Festival</p>
+                                <p class="event-text">Фестиваль <br>скорости</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="event-block gold">
+                            <img src="../../build/img/event2.png" alt="">
+                            <div class="event-block-content">
+                                <p class="event-name">AutoTuningShow</p>
+                                <p class="event-text">Крупнейшая в России выставка автотюнинга</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="event-block">
+                            <img src="../../build/img/event3.png" alt="">
+                            <div class="event-block-content">
+                                <p class="event-name">Drift Expo <br>Track Mode</p>
+                                <p class="event-text">Фестиваль дрифта в&nbsp;Москве</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="offset-lg-2 offset-0 col-lg-4 col-md-6 col-12">
+                        <div class="event-block">
+                            <img src="../../build/img/event4.png" alt="">
+                            <div class="event-block-content">
+                                <p class="event-name">JapanCarsExpo</p>
+                                <p class="event-text">Крупнейшая выставка японских машин в РФ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="event-block gold">
+                            <img src="../../build/img/event5.png" alt="">
+                            <div class="event-block-content">
+                                <p class="event-name">ЖигулиВсегда</p>
+                                <p class="event-text">Крупнейшая выставка тюнинга “классики”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-count">
+        <div class="container">
+            <div class="section-count-content">
+                <div class="section-count-img">
+                    <img src="../../build/img/count1.png" alt="">
+                </div>
+                <div class="row">
+                    <div class="col-xl-7 col-lg-8 col-md-10 col-12">
+                        <h2>На наших мероприятиях:</h2>
+                        <div class="count-text-wrp">
+                            <div class="row">
+                                <div class="col-lg-7 col-md-6 col-12">
+                                    <p>800+</p>
+                                    <p>уникальных машин</p>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-12">
+                                    <p>50+</p>
+                                    <p>номинаций</p>
+                                </div>
+                                <div class="col-lg-7 col-md-6 col-12">
+                                    <p>60 000+</p>
+                                    <p>участников</p>
+                                </div>
+                                <div class="col-lg-5 col-md-6 col-12">
+                                    <p>1000+</p>
+                                    <p>фото и видео</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-partners">
+        <div class="container">
+            <h2>Наши партнеры</h2>
+            <div class="row">
+                <div class="offset-xl-1 col-xl-10 offset-0 col-12">
+                    <div class="partner-slider-wrp">
+                        <div class="partner-slider">
+                            <div>
+                                <div class="partner-slide-wrp">
+                                    <div class="partner-slide">
+                                        <img src="../../build/img/partner1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="partner-slide-wrp">
+                                    <div class="partner-slide">
+                                        <img src="../../build/img/partner1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="partner-slide-wrp">
+                                    <div class="partner-slide">
+                                        <img src="../../build/img/partner1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="partner-slide-wrp">
+                                    <div class="partner-slide">
+                                        <img src="../../build/img/partner1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="partner-slide-wrp">
+                                    <div class="partner-slide">
+                                        <img src="../../build/img/partner1.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-slider-arrows-wrp">
+                            <div class="main-slider-arrow prev-partner-arrow">
+                                <img src="../../build/img/prev.svg" alt="">
+                            </div>
+                            <div class="main-slider-arrow next-partner-arrow">
+                                <img src="../../build/img/next.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-faq">
+        <div class="container">
+            <h2>Ответы на часто задаваемые вопросы</h2>
+            <div class="row">
+                <div class="offset-lg-1 col-lg-10 col-12">
+                    <ul class="faq-list">
+                        <li>
+                            <div class="li-question">
+                                ЧТО ЕСЛИ МЕРОПРИЯТИЕ ОТМЕНЯТ ИЗ-ЗА КАРАНТИНА?
+                            </div>
+                            <div class="li-answer">
+                                Если такое случится, мы вернем вам полную стоимость купленных билетов.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-question">
+                                ЕСТЬ ЛИ СКИДКА ПРИ ПОКУПКЕ БИЛЕТОВ НА ВСЮ СЕМЬЮ?
+                            </div>
+                            <div class="li-answer">
+                                Написать ответ
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li-question">
+                                ДЕТИ МОГУТ ПРИХОДИТЬ БЕСПЛАТНО?
+                            </div>
+                            <div class="li-answer">
+                                <p>Да, дети до 10 лет могут приходить бесплатно в сопровождении взрослого.</p>
+                                <p>С 10 лет оплачивается полная стоимость билета.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="footer-top-block">
+                <p>Телефон</p>
+                <a href="tel:499 755 54 02">499 755 54 02</a>
+            </div>
+            <a href="/" class="footer-logo">
+                <img src="../../build/img/logo.svg" alt="">
+            </a>
+            <div class="footer-top-block">
+                <p>E-mail</p>
+                <a href="mailto:info@driftexpo.ru">info@driftexpo.ru</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2021 Все права защищены</p>
+            <a href="https://daykraba.com/" class="footer-krab" target="_blank">
+                <img src="../../build/img/krab.png" alt="">
+            </a>
+            <p>
+                <a href="/policy">Правовая информация</a>
+            </p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="buyTicket" class="pop-up-general-block">
+    <p class="form-title">купить билет</p>
+    <form>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <div class="radio-wrp">
+                    <label class="radio">
+                        <input type="radio" name="tick" checked/>
+                        <div class="radio-text">Билет участника</div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">10 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price"><span class="ticketPrice">900</span> ₽</p>
+                    </div>
+                </div>
+                <div class="row row-rest">
+                    <div class="col-4">
+                        <p>остальные</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">80 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">1 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <div class="radio-wrp">
+                    <label class="radio">
+                        <input type="radio" name="tick"/>
+                        <div class="radio-text">Билет зрителя</div>
+                    </label>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">8 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price"><span  class="ticketPrice">700</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line">
+            <div class="col-lg-6 col-12">
+                <label class="checkbox-long">
+                    <input class="checkbox-amount" type="checkbox" />
+                    <div class="checkbox-text-long">
+                        <p>Парковочное место зрителя</p>
+                        <p>Для зрителей, приехавших на личном авто</p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-6 col-12 col-table">
+                <div class="row">
+                    <div class="col-4">
+                        <p>осталось</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">2 шт</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="col-price">+<span class="place-amount">200</span> ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-line row-line-btn">
+            <div class="col-lg-6 col-12">
+                <p class="prop-price">Итого:</p>
+                <p class="val-price"><span>700</span> рублей</p>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="form-btn-wrp">
+                    <div class="form-btn-skew skew-btn">
+                        <input class="form-btn" type="submit" name="" value="Купить билет">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="accredBlock" class="pop-up-general-block">
+    <p class="form-title">аккредитация сми</p>
+    <form id="accredForm" >
+        <div class="row">
+            <div class="col-12">
+                <p class="input-title">ФИО</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" data-input="name" name="name">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <p class="input-title">Представителем какого СМИ вы являетесь</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="smi">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12 label-form-wrp label-form-mob">
+                <label class="checkbox">
+                    <input type="checkbox" />
+                    <div class="checkbox-text">
+                        <p>Есть удостоверение журналиста</p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-12">
+                <p class="input-title">На каких ресурсах будет размещен материал с мероприятия</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="source">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12">
+                <p class="input-title">Сколько человек в Вашей бригаде (операторы  и т.д.)</p>
+                <div class="input-style">
+                    <input class="input-form input-valid" type="text" name="men">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12">
+                <p class="input-title">Контактный номер телефона</p>
+                <div class="input-style">
+                    <input class="input-form input-valid mask-phone" type="tel" data-input="phone" name="phone">
+                    <p class="input-error">Ошибка ввода</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12 label-form-wrp">
+                <label class="checkbox">
+                    <input class="checkbox-check" type="checkbox" />
+                    <div class="checkbox-text">
+                        <p class="accred">Я согласен с <a href="/policy">политиками конфиденциальности</a></p>
+                    </div>
+                </label>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div class="form-btn-wrp">
+                    <div class="form-btn-skew skew-btn btn-checkbox btn-checkbox-disabled">
+                        <input class="form-btn" type="submit" name="" value="Отправить">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnx" class="pop-up-general-block thnx">
+    <p class="form-title">Ваша Заявка получена!</p>
+    <div>Спасибо за обращение! Наш менеджер перезвонит Вам в&nbsp;течение дня!</div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=3607fc15-d35a-4f29-b7a9-b8cb92c549de" type="text/javascript"></script>
+
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/customSelect.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <script type="text/javascript">
+        function validation (a) {
+            var form = $(a);
+            var url = form.attr('action');
+            var method = form.attr('method');
+            var error = 0;
+
+            $(form).find('.input-valid').each(function() {
+                    var str = $(this).val();
+                    var value = $.trim(str);
+
+                    if($(this).hasClass('optional')) {
+                        return true;
+                    } else {
+                        if(!value || value == 'none'){
+                            $(this).closest('.input-style').addClass('error');
+                            $(this).closest('.input-style').find('.input-error').html('заполните поле');
+                            error = 1;
+                        }
+                        else {
+                            var str_length = value.length;
+                            if($(this).attr('data-input') == 'name'){
+                                if(str_length < 2 || str_length > 36){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^[а-яА-ЯёЁa-zA-Z\s]*$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только буквы');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'email'){
+                                if(str_length < 3 || str_length > 64){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат email');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'age'){
+                                if(str_length < 1 || str_length > 3){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = /^[0-9]*$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        var age = Number(value);
+                                        if(age < 16 || age > 125){
+                                            error = 1;
+                                            $(this).closest('.input-style').addClass('error');
+                                        }
+                                        else{
+                                            $(this).closest('.input-style').removeClass('error');
+                                        }
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'count'){
+                                if(str_length < 1 || str_length > 100){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('проверьте количество цифр');
+                                }
+                                else {
+                                    var regex = /^(?!0.*$)([0-9]{1,12})$/;
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('вводите только цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'phone'){
+                                if(str_length < 6 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){6,15}(\s*)?$/);
+                                    if (regex.test(value) == false) {
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('неверный формат телефона');
+                                        error = 1;
+                                    }
+                                    else {
+                                      $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'social_link'){
+                                if(str_length < 10 || str_length > 80){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(http|https|ftp):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'birthday'){
+                                if(str_length !== 10){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{2})$/);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                            if($(this).attr('data-input') == 'password'){
+                                if(str_length < 8 || str_length > 20){
+                                    error = 1;
+                                    $(this).closest('.input-style').addClass('error');
+                                    $(this).closest('.input-style').find('.input-error').html('пароль должен содержить от 8 до 20 символов');
+                                }
+                                else {
+                                    var regex = new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=(.*[a-zA-Z]){4}).{8,20}$/i);
+                                    if(regex.test(value) == false) {
+                                        error = 1;
+                                        $(this).closest('.input-style').addClass('error');
+                                        $(this).closest('.input-style').find('.input-error').html('пароль должен содержать латинские буквы и/или цифры');
+                                    }
+                                    else{
+                                        $(this).closest('.input-style').removeClass('error');
+                                    }
+                                }
+                            }
+                        }
+                    }
+               });
+            if(error) {
+                return 1
+            } else {
+                return 0;
+              };
+        };
+    </script>
+</body>
+</html>

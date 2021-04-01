@@ -1,0 +1,41 @@
+.not-found {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    height: calc(var(--vhMenu, 1vh) * 100);
+    h3 {
+        font-size: 44px;
+        line-height: 1.5;
+        margin-bottom: 24px;
+    }
+    a {
+        color: #EC7B1B;
+        text-decoration: underline;
+        transition: .2s;
+        &:hover {
+            color: #EC7B1B;
+            text-decoration: none;
+        }
+    }
+}
+.cifra {
+    font-size: 200px;
+    line-height: 1;
+    color: #EC7B1B;
+    font-family: 'Bernier', sans-serif;
+}
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 767px) {
+    .not-found  {
+        h3 {
+            font-size: 28px;
+        }
+    }
+    .cifra {
+        font-size: 150px;
+    }
+}

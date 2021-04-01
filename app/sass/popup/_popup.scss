@@ -1,0 +1,226 @@
+.pop-up-overlay-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    .overlay-pop-up {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 6;
+    }
+    &.active {
+        display: flex;
+        opacity: 1;
+    }
+}
+.pop-up-general-block {
+    padding: 39px 56px;
+    position: relative;
+    max-height: 85vh;
+    max-width: 90%;
+    width: 960px;
+    z-index: 7;
+    display: none;
+    background-color: #2F2F2F;
+    background-image: url('../img/pat.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid #000000;
+    overflow-y: auto;
+    &.active {
+        display: block;
+    }
+}
+.form-btn-wrp {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+.form-btn-skew {
+    position: relative;
+    width: 304px;
+    .form-btn {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: skewX(12deg);
+        background: transparent;
+        font-family: 'Bernier', sans-serif;
+        font-size: 24px;
+        color: #ffffff;
+    }
+}
+.form-title {
+    font-family: 'Bernier', sans-serif;
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+    padding-right: 40px;
+}
+.col-table {
+    .col-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    p {
+        font-family: 'Oswald', sans-serif;
+        letter-spacing: 0.02em;
+        line-height: 1.5;
+        font-size: 24px;
+        font-weight: 300;
+        padding-bottom: 6px;
+    }
+    p.col-price {
+        font-weight: 500;
+        font-size: 32px;
+        padding-bottom: 0;
+    }
+}
+.row-rest {
+    color: #5C5C5C;
+}
+.row-line {
+    & + .row-line {
+        margin-top: 24px;
+        &.row-line-btn {
+            margin-top: 75px;
+        }
+    }
+}
+.prop-price {
+    letter-spacing: 0.02em;
+    color: #DFDFDF;
+}
+.val-price {
+    font-size: 56px;
+    line-height: 1.2;
+    font-family: 'Bernier', sans-serif;
+}
+.pop-up-general-block-close-btn {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../img/close.png') center no-repeat;
+    background-size: contain;
+}
+.input-title {
+    color: #DFDFDF;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+.label-form-wrp {
+    display: flex;
+    align-items: center;
+}
+.input-style {
+    margin-bottom: 24px;
+}
+.input-form {
+    background: #2F2F2F;
+    border: 6px solid #FFFFFF;
+    width: 100%;
+    padding: 0 10px;
+    height: 72px;
+    color: #ffffff;
+}
+.thnx {
+    .form-title {
+        & + div {
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .label-form-mob {
+        margin-bottom: 24px;
+    }
+    .checkbox-text-long {
+        padding-left: 46px;
+        p:first-child {
+            line-height: 1.2;
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+        &::before {
+            top: 7px;
+            width: 30px;
+            height: 30px;
+            border-width: 4px;
+        }
+        &::after {
+            top: 15px;
+            left: 7px;
+            width: 17px;
+            height: 15px;
+        }
+    }
+    .pop-up-general-block {
+        padding: 20px 15px 30px;
+    }
+    .form-title {
+        font-size: 40px;
+    }
+    .radio-wrp {
+        margin-bottom: 10px;
+    }
+    .radio-text {
+        font-size: 28px;
+        padding-left: 46px;
+    }
+    .radio-text::before {
+        width: 30px;
+        height: 30px;
+        border-width: 4px;
+    }
+    .row-line + .row-line.row-line-btn {
+        margin-top: 45px;
+    }
+    .val-price {
+        font-size: 46px;
+    }
+    .form-btn-skew {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .col-table p {
+        font-size: 18px;
+        padding-bottom: 3px;
+    }
+    .col-table p.col-price {
+        font-size: 22px;
+        padding-bottom: 0;
+    }
+    .col-table {
+        .row {
+            margin-right: -10px;
+            margin-left: -10px;
+            .col-4 {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+    }
+    .pop-up-general-block-close-btn {
+        top: 15px;
+        right: 15px;
+        width: 35px;
+        height: 35px;
+    }
+}
